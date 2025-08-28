@@ -22,5 +22,6 @@ jobs:  # Les tâches à exécuter
         run: |
           python -m pip install --upgrade pip
 
-      - name: Exécuter les tests  # Étape 4 : Lancer les tests avec pytest
-        run: pytest
+      - name: Installer pytest  # Étape 4 : Installer pytest
+        run: |
+          pip install pytest  # Installer pytest  
